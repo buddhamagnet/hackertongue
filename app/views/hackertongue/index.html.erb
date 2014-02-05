@@ -1,2 +1,15 @@
-<h1>Hackertongue#index</h1>
-<p>Find me in app/views/hackertongue/index.html.erb</p>
+<h3>Give us a github user, and we'll give you languages!</h3>
+
+<p>This is a fun project to determine the favourite programming languages of
+a Github user. Enter a Guthub username below and we will try and find that out for you.</p>
+
+<h4>CAVEATS</h4>
+
+<p>This project was completed under tight time constraints so we have not had time to
+deal with rate-limiting. So we can only support 60 requests per hour for now.</p>
+
+<%= form_tag language_path do %>
+  <%= label_tag :username, 'Github username' %>
+  <%= text_field_tag :username, params[:username] %>
+  <%= submit_tag 'Go!' %>
+<% end %>
