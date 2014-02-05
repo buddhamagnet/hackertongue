@@ -1,6 +1,5 @@
 class HackertongueController < ApplicationController
   def index
-    @most_popular = Hacker.most_popular
   end
 
   def create
