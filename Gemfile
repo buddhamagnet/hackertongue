@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 # source "file:///Users/buddhamagnet/Code/OSS/rb/repo"
 
 gem 'rails', '4.0.2'
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -12,6 +11,7 @@ gem 'zurb-foundation'
 gem 'hublingo', '= 0.0.3'
 
 group :development do
+  gem 'sqlite3'
   # generates model schema inline.
   gem 'annotate'
   # replaces the default Rails error page.
@@ -54,6 +54,7 @@ group :development do
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'cucumber-rails', require: false
   gem 'capybara'
   gem 'database_cleaner'
