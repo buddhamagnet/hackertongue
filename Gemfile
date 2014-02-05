@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-source "file:///Users/buddhamagnet/Code/OSS/rb/repo"
+# initialy built gem locally on local gem server
+# source "file:///Users/buddhamagnet/Code/OSS/rb/repo"
 
 gem 'rails', '4.0.2'
 gem 'sqlite3'
@@ -8,7 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'zurb-foundation'
-gem 'hublingo'
+gem 'hublingo', '= 0.0.3'
 
 group :development do
   # generates model schema inline.

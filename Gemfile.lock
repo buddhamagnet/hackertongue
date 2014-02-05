@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: file:/Users/buddhamagnet/Code/OSS/rb/repo/
   specs:
     actionmailer (4.0.2)
       actionpack (= 4.0.2)
@@ -124,8 +123,7 @@ GEM
     hirb (0.7.1)
     http_parser.rb (0.5.3)
     httpclient (2.3.4.1)
-    hublingo (0.0.1)
-      netrc (= 0.7.7)
+    hublingo (0.0.3)
       octokit (= 2.7.1)
     i18n (0.6.9)
     jquery-rails (3.1.0)
@@ -174,7 +172,6 @@ GEM
     net-ssh (2.8.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    netrc (0.7.7)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     octokit (2.7.1)
@@ -328,7 +325,7 @@ DEPENDENCIES
   guard-livereload
   guard-rspec
   hirb
-  hublingo
+  hublingo (= 0.0.3)
   jquery-rails
   localtunnel
   lol_dba
