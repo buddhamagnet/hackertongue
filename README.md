@@ -1,28 +1,9 @@
-== README
+== HACKERTONGUE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A fun project to retrieve the favourite languages of Github users.
 
-Things you may want to cover:
+Core piece of work was completed in the Hublingo gem at:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Once the gem was complete, decided to create a Rails 4 app to demonstrate the
+use of the gem in a running application and also to demonstrate the variety
+of tools and approaches I would use when building a real application.
