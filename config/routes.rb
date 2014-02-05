@@ -1,4 +1,6 @@
 Hackertongue::Application.routes.draw do
-  get "hackertongue/index"
+
   root 'hackertongue#index'
+
+  post '/', to: 'hackertongue#create', as: 'language'
 end
