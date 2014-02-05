@@ -17,15 +17,18 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-  	<nav class="top-bar">
-  		<ul class="title-area">
-  			<li class="name"><h1>created by <%= link_to 'buddhamagnet', '#' %></li>
-  		</ul>
+  	<nav class="top-bar" data-topbar>
+  	  <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">HACKERTONGUE</a></h1>
+        </li>
+      </ul>
   		<section class="top-bar-section">
-        <ul class="right">
+        <ul class="left">
         	<li class="divider"></li>
-        	<li>twitter</li>
-        	<li>github</li>
+        	<li><%= link_to 'twitter', 'http://twitter.com/buddhamagnet' %></li>
+        	<li class="divider"></li>
+        	<li><%= link_to 'github', 'http://github.com/buddhamagnet' %></li>
         </ul>
   		</section>
   	</nav>
