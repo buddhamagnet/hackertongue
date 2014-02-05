@@ -10,6 +10,6 @@ deal with rate-limiting. So we can only support 60 requests per hour for now.</p
 
 <%= form_tag language_path do %>
   <%= label_tag :username, 'Github username' %>
-  <%= text_field_tag :username, params[:username] %>
+  <%= text_field_tag :username, params[:username], title: "Enter the Github username here", data: { tooltip: true } %>
   <%= submit_tag 'Go!' %>
 <% end %>
