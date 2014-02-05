@@ -29,7 +29,8 @@ group :development do
   # mini view framework for the console.
   gem 'hirb'
   # expose a local web server to the internet.
-  gem 'localtunnel'
+  # this is down right now, using ngrok instead.
+  # gem 'localtunnel'
   # rake tasks that scan models for potential indices.
   gem 'lol_dba'
   # smtp server that catches emails for display.
