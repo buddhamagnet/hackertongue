@@ -3,6 +3,10 @@ Feature: Hackertongue
   As a user
   I want to be able to do that via a form
 
-Scenario: landing page content
+Scenario: Landing page content
   Given I am on the homepage
-  Then the page title should be "Projects - Project Sundance"
+  Then the page title should be "What's your favourite hacker's favourite language?"
+  And I should see "Give us a github user, and we'll give you languages!"
+  When I fill in "Github username" with "buddhamagnet"
+  And I hit "Go!"
+  Then I should see "Give us a github user, and we'll give you languages!"
