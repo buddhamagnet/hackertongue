@@ -51,8 +51,6 @@ group :development do
   # the awesome guard
   gem 'guard-rspec'
   gem 'guard-livereload'
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
-  gem 'growl'
 end
 
 group :test do
