@@ -10,3 +10,4 @@ Scenario: Landing page content
   When I fill in "Github username" with "buddhamagnet"
   And I hit "Go!"
   Then I should see "Give us a github user, and we'll give you languages!"
+  And I should see "Ruby"
