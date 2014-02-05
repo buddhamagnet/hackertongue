@@ -175,6 +175,7 @@ GEM
       mini_portile (~> 0.5.0)
     octokit (2.7.1)
       sawyer (~> 0.5.2)
+    pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -329,6 +330,7 @@ DEPENDENCIES
   lol_dba
   mailcatcher
   meta_request
+  pg
   pry
   pry-doc
   rack-mini-profiler
