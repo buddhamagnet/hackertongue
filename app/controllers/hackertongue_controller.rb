@@ -12,10 +12,14 @@ class HackertongueController < ApplicationController
       when "That hacker doesn't exist baby."
       when /Uh oh! Rate limit! Please try again/
       else
-        Hacker.create(params[:username], data.to_s)
+        Hacker.create(username: params[:username], language: data.to_s)
         data = "Found hacker on Github! Fave language: #{data}"
       end
   	end
     redirect_to root_url, notice: data
+  end
+
+  def hacker_params
+    params.require(:username).permit(:username)
   end
 end
