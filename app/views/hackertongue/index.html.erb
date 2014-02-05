@@ -9,7 +9,6 @@ a Github user. Enter a Github username below and we will try and find that out f
 deal with rate-limiting. So we can only support 60 requests per hour for now. That said, when someone uses this form and we grab a hacker's fave lingo, we persist it and that way we can build up a collection of hackers by language and get the data back to you faster.</p>
 
 <%= form_tag language_path do %>
-  <%= label_tag :username, 'Github username' %>
-  <%= text_field_tag :username, params[:username], title: "Enter the Github username here", data: { tooltip: true } %>
+  <%= text_field_tag :username, params[:username], title: "Enter the Github username here", data: { tooltip: true }, placeholder: "Github username" %>
   <%= submit_tag 'Go!' %>
 <% end %>

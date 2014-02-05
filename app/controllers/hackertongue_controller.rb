@@ -10,9 +10,9 @@ class HackertongueController < ApplicationController
       case data
       when "Sorry that hacker has no repos!"
       when "That hacker doesn't exist baby."
-      when "You're too greedy, wait for a while."
+      when /Uh oh! Rate limit! Please try again/
       else
-        Hacker.new(params[:username], data).save
+        Hacker.create(params[:username], data.to_s)
         data = "Found hacker on Github! Fave language: #{data}"
       end
   	end
