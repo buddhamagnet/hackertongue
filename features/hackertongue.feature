@@ -7,6 +7,7 @@ Background:
   Given I am on the homepage
   Then the page title should be "What's your favourite hacker's favourite language?"
   And I should see "Give us a github user, and we'll give you languages!"
+  And I should be informed of the top language within "#top"
 
 Scenario: Known user
   When I fill in "Github username" with "buddhamagnet"
