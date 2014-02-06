@@ -16,6 +16,12 @@ hub = Hublingo.new
 hub.lingo('buddhamagnet')
 ```
 
+The Hublingo gem looks for Githiub client ID and secret in environment variables. This app
+manages those using dotenv-rails.
+
+I had issues deploying the app to Heroku due to conflicts with the Zurb code, but I like
+the way it looks so will expose the local app to the public internet using ngrok.
+
 NOTES:
 
 This whole project, the gem and application, was completed in 3 1/2 hours.
