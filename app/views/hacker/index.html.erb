@@ -1,0 +1,9 @@
+<h3>Registered hackers</h3>
+
+<p>There are <%= @hackers.size %> hackers in our database right now.</p>
+
+<% @hackers.each do |hacker| %>
+  <div class="panel">
+  	<%= link_to hacker.username, "http://github.com/#{hacker.username}" %> - loves <strong><%= hacker.language.downcase %><strong>
+  </div>
+<% end %>
