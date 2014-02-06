@@ -4,6 +4,6 @@
 
 <% @hackers.each do |hacker| %>
   <div class="panel">
-  	<%= link_to hacker.username, "http://github.com/#{hacker.username}" %> - loves <strong><%= hacker.language.downcase %><strong>
+  	<%= link_to hacker.username, "http://github.com/#{hacker.username}" %> - loves <strong><%= hacker.language.downcase %></strong>
   </div>
 <% end %>

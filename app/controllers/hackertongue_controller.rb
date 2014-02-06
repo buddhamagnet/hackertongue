@@ -1,4 +1,7 @@
 class HackertongueController < ApplicationController
+
+  before_filter :log_request
+
   def index
     @most_popular = Hacker.most_popular
   end

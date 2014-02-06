@@ -1,0 +1,9 @@
+<h3>Requests</h3>
+
+<% @requests.each do |request| %>
+  <div class="panel">
+		<h6>Path requested: <%= request.path %></h6>
+		<h6>Remote addressed: <%= request.remote %></h6>
+		<h6>IP: <%= request.ip %></h6>
+  </div>
+<% end %>
