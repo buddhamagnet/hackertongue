@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore dotenv file.
-./env
+./.env
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
