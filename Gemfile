@@ -8,11 +8,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'zurb-foundation'
-gem 'hublingo', '= 0.0.5'
+gem 'hublingo', '= 0.0.6'
 gem 'pg'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 
 group :development do
