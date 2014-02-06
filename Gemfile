@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'zurb-foundation'
 gem 'hublingo', '= 0.0.6'
 gem 'pg'
+gem 'kaminari'
 
 group :development, :test do
   gem 'sqlite3'
