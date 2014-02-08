@@ -125,7 +125,7 @@ GEM
     hirb (0.7.1)
     http_parser.rb (0.5.3)
     httpclient (2.3.4.1)
-    hublingo (0.1.2)
+    hublingo (0.1.4)
       octokit (= 2.7.1)
     i18n (0.6.9)
     jquery-rails (3.1.0)
@@ -324,7 +324,7 @@ DEPENDENCIES
   guard-livereload
   guard-rspec
   hirb
-  hublingo (= 0.1.2)
+  hublingo (~> 0.1.4)
   jquery-rails
   kaminari
   lol_dba
