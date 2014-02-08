@@ -5,6 +5,6 @@ class Hacker < ActiveRecord::Base
   default_scope { order('username ASC') }
 
   def self.most_popular
-    group(:language).order('count_id ASC').limit(1).count('id').first.first
+    group(:language).order(:id).count.keys.first
   end
 end
