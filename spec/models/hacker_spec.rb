@@ -17,6 +17,6 @@ describe Hacker do
   end
 
   it "should not return the least popular language" do
-    Hacker.most_popular.should_not eql("Perl")
+    Hacker.most_popular.should_not eql("Go")
   end
 end
